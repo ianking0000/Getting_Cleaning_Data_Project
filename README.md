@@ -48,4 +48,4 @@ Useing *mean* function to get the average for each index (i.e. each activity and
 ##5. Output
 Using *write.table* to output the "final_data" into a txt file named as "mean_var.txt".
 
-In the new data frame, there are 80 cols. and 180 rows. The 1st column is the index, which in the format number-activity. The number is the volunteer ID. The rest 79 columns are the average of the 79 features which is either a mean or std values.Since we have 30 volunteers and 6 activities, so there are 180 rows.  
+In the new data frame, there are 80 columns and 180 rows. The 1st column is the index, which in the format number-activity. The number is the volunteer ID. The rest 79 columns are the average of the 79 features which is either a mean or std values.Since we have 30 volunteers and 6 activities, so there are 180 rows.  
