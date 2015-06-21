@@ -16,7 +16,7 @@ test <- cbind(test_sub,test_y,test_x)
 train <- cbind(train_sub,train_y,train_x)
 full_data <- rbind (train,test)
 
-#########################2.Subject########################################
+#########################2.Subset########################################
 #1st col is the volunteer ID, second column is the activiity ID,# 
 #the rest 561 cols are the features#
 f_lab <- read.table(file ="./UCI HAR Dataset/features.txt")
