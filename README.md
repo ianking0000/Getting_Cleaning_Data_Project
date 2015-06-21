@@ -10,9 +10,9 @@ The orginal training and test data are read in using *read.table* function. "X",
 
 "y" contains the activity ID (range 1~6).
 
-First column combine "sub","y","x" for test and training separately using *cbind*.Then training and test data frame are row combined using *rbind*.
+First column-combine "sub","y","x" for test and training separately using *cbind* function.Then row-combine the training and test data frames using *rbind* function.
 
-The generated data frame is "full_data", which ahas 10299 rows and 563 columns. The 1st col. is the volunteer ID, the 2nd col. is the activity, the rest 561 columns are the 561-features.
+The generated data frame is "full_data", which ahas 10299 rows and 563 columns. The 1st column is the volunteer ID, the 2nd column is the activity, the rest 561 columns are the 561 features.
 
 ##2.Subset
 Read in "features.txt" to get the relation between element index ~ feature names in the 561-features vector using*read.table*. This relation is stored in "f_lab" data frame.
@@ -48,4 +48,4 @@ Useing *mean* function to get the average for each index (i.e. each activity and
 ##5. Output
 Using *write.table* to output the "final_data" into a txt file named as "mean_var.txt".
 
-In the new data frame, there are 80 cols. and 180 rows. The 1st col. is the index, which in the format number-activity. The number is the volunteer ID. The rest 79 col. are the average of the 79 features which is either a mean or std values.Since we have 30 volunteers and 6 activities, so there are 180 rows.  
+In the new data frame, there are 80 cols. and 180 rows. The 1st column is the index, which in the format number-activity. The number is the volunteer ID. The rest 79 columns are the average of the 79 features which is either a mean or std values.Since we have 30 volunteers and 6 activities, so there are 180 rows.  
